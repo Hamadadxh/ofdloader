@@ -29,7 +29,7 @@ jobs:
         run: flutter build windows --release
 
       - name: Upload Windows Build
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v
         with:
           name: ofdloader-windows
           path: build/windows/x64/runner/Release/**
