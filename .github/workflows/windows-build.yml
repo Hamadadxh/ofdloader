@@ -14,10 +14,13 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: 'stable'
+          flutter-version: '3.24.3'
 
       - name: Enable Windows desktop
         run: flutter config --enable-windows-desktop
+
+      - name: Doctor
+        run: flutter doctor -v
 
       - name: Get packages
         run: flutter pub get
